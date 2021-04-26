@@ -22,13 +22,14 @@ import { StarsComponent } from './stars/stars.component';
     ProductItemComponent,
     ProductDetailComponent,
     SearchComponent,
-    StarsComponent
+    StarsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

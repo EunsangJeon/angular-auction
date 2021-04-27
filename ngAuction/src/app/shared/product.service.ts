@@ -12,13 +12,20 @@ export class ProductService {
     return products;
   }
 
-  getProductById(productId: number): Product | null {
+  getProductById(productId: number): Product {
     const product = products.find(p => p.id === productId);
     if (product) {
       return product;
     }
     else {
-      throw new Error('No such product in stock');
+      return {
+        id: -1,
+        title: 'N/A',
+        price: 0.0,
+        rating: 0.0,
+        description: 'N/A',
+        categories: ['N/A'],
+      };
     }
   }
 }

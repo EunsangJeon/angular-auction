@@ -8,7 +8,14 @@ import { Product } from '../shared/product.service';
 })
 export class ProductItemComponent implements OnInit {
 
-  @Input() product?: Product;
+  @Input() product: Product = {
+    id: -1,
+    title: 'N/A',
+    price: 0.0,
+    rating: 0.0,
+    description: 'N/A',
+    categories: ['N/A'],
+  };
 
   constructor() {
   }

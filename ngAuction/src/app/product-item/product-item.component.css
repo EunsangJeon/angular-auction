@@ -1,6 +1,6 @@
 .ratings {
   color: darkred;
 }
-img {
+img [mat-card-image] {
   width: 100%;
 }
